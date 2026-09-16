@@ -2,7 +2,7 @@
 
 Juego de estrategia y construcción para un jugador, ambientado en un barrio imaginario del conurbano bonaerense. Etapa 1: una maqueta viva sin combate, hecha con Three.js y Vite.
 
-El escenario incluye calles, veredas, casas chorizo, sociedad de fomento, club de barrio y cultivos de soja en el borde urbano. Podés recuperar materiales, cosechar soja, reunir yerba e incorporar vecinos. El catálogo permite construir casas chorizo, almacenes, conventillos, lotes de soja, talleres, clubes y potreros de fútbol.
+El escenario tiene 3 × 3 manzanas con 18 lotes cada una: calles, veredas, casas chorizo, sociedad de fomento, club de barrio y cultivos de soja en el borde urbano. Podés recuperar materiales, cosechar soja, reunir yerba e incorporar vecinos. El catálogo permite construir casas chorizo, almacenes, conventillos, lotes de soja, talleres, clubes y potreros de fútbol.
 
 ## Documentación
 
@@ -28,8 +28,8 @@ La compilación genera `dist/`, apto para alojamiento estático. Requiere WebGL 
 ## Controles rápidos
 
 - Clic para seleccionar; clic derecho para mover o trabajar.
-- WASD / flechas: cámara. Rueda: zoom. Botón central: rotación.
-- Teclas 1–7: construcciones. R: girar una construcción. Esc: cancelar.
+- Arrastrar el mapa, WASD o flechas: mover la cámara. Rueda: zoom. Botón central: rotación.
+- Teclas 1–7: construcciones; se ubican solas en el lote bajo el cursor, con el frente a la calle. Esc: cancelar.
 - Espacio: pausa. Guardar y cargar desde el menú de pausa.
 - En pantalla táctil: seleccionar un vecino y tocar el recurso o terreno.
 

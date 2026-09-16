@@ -57,15 +57,26 @@ Tero Cosechado es un escenario ficticio inspirado en el conurbano bonaerense. No
 
 El mapa incluye:
 
-- Una trama de calles y veredas con manzanas y lotes.
+- Nueve manzanas de 3 × 3, separadas por calles con veredas y divididas en lotes (ver [Manzanas y lotes](#manzanas-y-lotes)).
 - Casas chorizo con patios y medianeras.
 - Una sociedad de fomento.
 - Un club de barrio.
 - Un conventillo con patio común.
 - Arbolado, postes, cables, autos estacionados y tanques de agua.
-- Una franja ferroviaria en el borde del mapa.
-- Acopios de materiales y puestos de provisiones.
-- Cultivos de soja en los sectores abiertos del borde urbano.
+- Una franja ferroviaria en el borde este y surcos de soja más allá de la calle sur.
+- Acopios de materiales y puestos de provisiones sobre lotes baldíos.
+- Cultivos de soja en lotes baldíos.
+
+### Manzanas y lotes
+
+- **Manzanas:** el barrio tiene 3 × 3 manzanas. Las calles están cada 30 unidades del mapa.
+- **Lotes:** cada manzana tiene **18 lotes** de 3,6 de frente por 8 de fondo:
+  - siete sobre la calle norte y siete sobre la calle sur;
+  - dos sobre la calle este y dos sobre la calle oeste.
+- **Corazón de manzana:** el centro son los fondos de las casas, con pasto, árboles y tendederos. No se construye ahí.
+- **Esquinas:** los lotes de las puntas de las filas norte y sur son de esquina.
+
+Tomando la casa chorizo como un lote real de unos 8,66 m de frente, cada manzana mide cerca de 75 m de lado.
 
 La presentación usa volúmenes tridimensionales simplificados y una cámara ortográfica. Las construcciones se reconocen por su distribución y sus elementos, no solamente por su nombre.
 
@@ -80,7 +91,7 @@ Su presencia corresponde a la interpretación del borde periurbano del escenario
 El club de barrio ocupa el lugar de la cancha que aparecía en una versión preliminar. El club y el potrero de fútbol son elementos diferentes:
 
 - El **club** tiene un edificio social, buffet y acceso desde la calle.
-- El **potrero** es un terreno abierto, de césped irregular, con dos arcos sencillos.
+- El **potrero** es un baldío de cuatro lotes, de césped irregular, con dos arcos, líneas gastadas y alambrado.
 
 Ambos están disponibles en el catálogo de construcción. No hay canchas de tenis en el escenario actual.
 
@@ -106,7 +117,7 @@ Las casas existentes forman parte del barrio. La capacidad disponible no equival
 3. Elegí otro vecino y asignalo a un puesto de yerba o a un cultivo de soja.
 4. Conservá por lo menos un vecino disponible para construir.
 5. En **Construir**, elegí **Casa chorizo**.
-6. Buscá un lote libre. Girá la casa con **R** si es necesario para que el frente mire a la calle.
+6. Pasá el cursor sobre un lote libre. La casa se ubica sola en el lote con el frente hacia la calle.
 7. Cuando la vista previa sea verde, hacé clic para iniciar la obra.
 8. Esperá la llegada del constructor y la finalización del edificio.
 9. En **Vecinos**, elegí **Invitar** para incorporar otra persona.
@@ -122,10 +133,10 @@ Las casas existentes forman parte del barrio. La capacidad disponible no equival
 - **Clic derecho en el terreno con un vecino seleccionado:** ordenar que camine hacia ese lugar.
 - **Clic derecho sobre un recurso con un vecino seleccionado:** asignar recolección o recuperación.
 - **Clic derecho sobre una obra con un vecino seleccionado:** asignarlo a construir.
+- **Arrastrar con clic izquierdo:** desplazar la cámara por el barrio. Un clic corto sigue seleccionando.
 - **W, A, S, D o flechas:** desplazar la cámara.
 - **Rueda del mouse:** acercar o alejar.
 - **Botón central presionado y arrastre:** girar la cámara.
-- **R, durante la colocación:** girar el edificio 90 grados.
 - **Esc durante la colocación:** cancelar la vista previa.
 - **Clic derecho durante la colocación:** cancelar la vista previa.
 - **Espacio:** pausar o reanudar.
@@ -149,7 +160,6 @@ Las tarjetas indican el atajo en su esquina. Si no ves todas, desplazá horizont
 - **Rotar cámara:** cambiar la orientación de la vista.
 - **Centrar:** volver al barrio central y al zoom inicial.
 - **Minimapa:** hacer clic para desplazar el centro de la cámara hacia ese sector.
-- **Girar**, en la vista previa de construcción: alternativa a la tecla R.
 - **Detener**, en la ficha del vecino: interrumpir su tarea y recorrido actuales.
 
 ### Pantallas táctiles
@@ -158,7 +168,8 @@ Las tarjetas indican el atajo en su esquina. Si no ves todas, desplazá horizont
 - Con ese vecino seleccionado, tocá un recurso para asignarlo.
 - Tocá terreno vacío para ordenarle caminar.
 - Elegí una tarjeta y tocá un lote para colocar una construcción.
-- Usá **Girar** y **Cancelar** en la barra de colocación.
+- Usá **Cancelar** en la barra de colocación.
+- Arrastrá con un dedo para desplazar la cámara.
 - El gesto de dos dedos permite acercar y girar la cámara.
 
 La interfaz se adapta a pantallas pequeñas. El minimapa se oculta para dejar más espacio y el catálogo se puede desplazar lateralmente. Una computadora ofrece más precisión para construir y dar órdenes.
@@ -288,9 +299,8 @@ Para iniciar una construcción nueva se exige un vecino sin tarea y sin un despl
 
 1. Elegí una tarjeta o su atajo.
 2. El edificio aparece como una vista previa semitransparente.
-3. Mové el cursor sobre el mapa.
-4. Girá con R o con el botón Girar si hace falta.
-5. Confirmá con clic sobre una posición válida.
+3. Mové el cursor sobre una manzana: la vista previa salta al lote que está debajo y gira sola para que el frente mire a esa calle.
+4. Confirmá con clic sobre un lote válido.
 
 **Verde** significa posición permitida. **Rojo** indica que alguna regla no se cumple.
 
@@ -298,17 +308,21 @@ Para iniciar una construcción nueva se exige un vecino sin tarea y sin un despl
 
 No se puede construir:
 
-- Fuera de los límites edificables del mapa.
-- Sobre las calles o las franjas de vereda reservadas.
-- Encima de otra construcción, incluida una obra incompleta.
-- Sobre un recurso todavía disponible.
-- Encima de un vecino.
-- En el espacio reservado a la torre de agua.
-- Invadiendo el borde ferroviario.
+- **Fuera de los lotes:** las calles, las veredas y el corazón de manzana no se construyen.
+- **Lotes ocupados:** no se puede construir encima de otra construcción, incluida una obra incompleta.
+- **Recursos sin agotar:** un lote con un acopio, un cultivo o un puesto de yerba queda libre recién cuando el recurso se agota.
 
-Las edificaciones cerradas deben orientar su frente hacia una calle cercana. Los lotes de soja y potreros, por ser espacios abiertos, no tienen esta exigencia de frente.
+Cada edificio ocupa una cantidad fija de lotes contiguos de la misma fila:
 
-La orientación se ajusta en giros de 90 grados. Un edificio alargado intercambia su ancho y profundidad al girarlo; las colisiones utilizan esa ocupación rectangular real.
+| Edificio | Lotes |
+|---|---|
+| Casa chorizo, almacén, lote de soja | 1 |
+| Conventillo, taller, club | 2 |
+| Potrero | 4 |
+
+Las filas este y oeste tienen solo dos lotes, así que el potrero va siempre sobre las calles norte o sur.
+
+Los edificios vecinos pueden quedar pegados, como casas con medianera. Si un vecino está parado en el lote cuando empieza la obra, se corre al borde y sigue con lo que estaba haciendo.
 
 ### Costos y avance
 
@@ -320,15 +334,23 @@ La orientación se ajusta en giros de 90 grados. Un edificio alargado intercambi
 - Podés asignar vecinos adicionales a una obra mediante órdenes directas; cada uno aporta avance mientras trabaja.
 - La función del edificio se activa al llegar al 100%.
 
+### Cómo se ve una obra
+
+- **Hasta el 20%:** se marca el lote con un encofrado de madera, se hace el basamento de hormigón y aparecen los hierros de arranque. En el lote de soja y el potrero, en cambio, se nivela la tierra.
+- **Del 20% al 100%:** el edificio crece desde el basamento, rodeado de andamios que suben con la obra.
+- **Al terminar:** se retiran los andamios, el edificio se asienta y se levanta una nube de polvo.
+
+Los vecinos trabajan parados junto al borde de la obra o del recurso, cada uno en un lugar distinto. Si no queda lugar libre alrededor de un recurso, el juego lo avisa.
+
 ### Interrumpir y retomar
 
 Detener al constructor no borra la obra. Podés seleccionarla y utilizar **Asignar constructor**, o seleccionar un vecino y darle una orden directa sobre ella.
 
-No hay demolición, traslado, devolución de costos ni cancelación con reembolso de una obra ya colocada. Revisá el lote y la orientación antes de confirmar.
+No hay demolición, traslado, devolución de costos ni cancelación con reembolso de una obra ya colocada. Revisá el lote antes de confirmar.
 
 ## 9. Catálogo de edificios y espacios
 
-Las ocupaciones siguientes se expresan en **unidades del mapa**, no en metros ni lotes catastrales reales.
+Las ocupaciones siguientes se expresan en **unidades del mapa** (un lote mide 3,6 de frente por 8 de fondo), no en metros.
 
 ### 9.1 Sociedad de fomento
 
@@ -342,7 +364,7 @@ Es una construcción inicial y no aparece como opción para construir nuevas cop
 
 - **Costo:** 70 materiales.
 - **Trabajo:** 11 segundos con un vecino.
-- **Ocupación:** 3 de ancho por 6 de profundidad.
+- **Ocupación:** 1 lote; 3 de ancho por 6 de profundidad.
 - **Efecto:** +4 lugares de alojamiento.
 
 El modelo tiene lote alargado, cuartos en fila junto a una medianera, puertas a una galería, patio lateral, acceso por zaguán y servicios en el fondo. La fachada posee aberturas y remate propio; el patio incluye detalles domésticos.
@@ -353,18 +375,18 @@ No es un rancho renombrado: la profundidad del lote y la relación entre cuartos
 
 - **Costo:** 90 materiales y 25 soja.
 - **Trabajo:** 13 segundos.
-- **Ocupación:** 3,6 por 3,6.
-- **Efecto:** +1 yerba cada 5 segundos.
+- **Ocupación:** 1 lote; 3,5 por 3,6.
+- **Efecto:** +1 yerba cada 5 segundos, o **+2** si está en un lote de esquina.
 
 Tiene local a la calle, vidriera, cartel, toldo y volumen de depósito. Su función de abastecimiento es independiente de la vivienda.
 
-Varios almacenes suman sus producciones. No requieren un vecino asignado después de la construcción.
+El almacén de esquina es el clásico del barrio: por eso rinde el doble. Varios almacenes suman sus producciones. No requieren un vecino asignado después de la construcción.
 
 ### 9.4 Conventillo — tecla 3
 
 - **Costo:** 150 materiales y 35 soja.
 - **Trabajo:** 20 segundos.
-- **Ocupación:** 6 por 6.
+- **Ocupación:** 2 lotes; 6 por 6.
 - **Efecto:** +8 lugares de alojamiento.
 
 Representa cuartos alrededor de un patio compartido, galerías de circulación y servicios al fondo. Su capacidad mayor responde a una organización residencial colectiva.
@@ -375,10 +397,10 @@ El modelo es una interpretación simplificada; no pretende representar todas las
 
 - **Costo:** 40 materiales.
 - **Trabajo:** 7 segundos.
-- **Ocupación:** 3,4 por 3,4.
+- **Ocupación:** 1 lote; 3,4 por 6.
 - **Efecto:** +3 soja cada 5 segundos.
 
-Presenta surcos y plantas de hojas anchas. Puede ubicarse sin orientar un frente hacia la calle. Cada lote terminado produce automáticamente y sus rendimientos se suman.
+Presenta surcos y plantas de hojas anchas. Ocupa un lote completo, con el cerco hacia la calle. Cada lote terminado produce automáticamente y sus rendimientos se suman.
 
 Todavía no hay siembra, fertilización, agua, estaciones, maduración ni cosecha estacional.
 
@@ -386,7 +408,7 @@ Todavía no hay siembra, fertilización, agua, estaciones, maduración ni cosech
 
 - **Costo:** 100 materiales y 20 soja.
 - **Trabajo:** 15 segundos.
-- **Ocupación:** 4 por 4,8.
+- **Ocupación:** 2 lotes; 4 por 4,8.
 - **Efecto:** +25% a la recuperación de materiales de los vecinos.
 
 Tiene una nave de trabajo, portón, cubierta de chapa y espacio de apoyo. La mejora representa la disponibilidad de herramientas y oficios.
@@ -397,10 +419,10 @@ El beneficio es global y no acumulable. Construir un segundo taller no convierte
 
 - **Costo:** 140 materiales y 30 soja.
 - **Trabajo:** 18 segundos.
-- **Ocupación:** 6 por 6.
+- **Ocupación:** 2 lotes; 6 por 6.
 - **Efecto:** reduce la invitación de vecinos a 25 soja y 3 yerba.
 
-Tiene salón social, buffet, entrada a la calle, marquesina y lugar para reunirse en el frente. Es un edificio comunitario: no suma viviendas ni genera una renta automática.
+Tiene salón social, buffet, entrada a la calle, marquesina, lugar para reunirse en el frente y un mástil con la bandera argentina. Es un edificio comunitario: no suma viviendas ni genera una renta automática.
 
 La copia inicial ya activa el beneficio. Podés construir más clubes como parte de la composición del barrio, pero el descuento no se acumula.
 
@@ -408,10 +430,10 @@ La copia inicial ya activa el beneficio. Podés construir más clubes como parte
 
 - **Costo:** 45 materiales.
 - **Trabajo:** 8 segundos.
-- **Ocupación:** 7 por 7.
+- **Ocupación:** 4 lotes; 14 por 10, unos 40 × 29 m.
 - **Efecto económico:** ninguno.
 
-Es un espacio abierto con césped irregular, sectores de tierra y dos arcos. Su propósito en esta etapa es permitir diseñar un lugar de juego barrial.
+Es un baldío con césped irregular, tierra gastada en las áreas, líneas de cal, dos arcos en los extremos, alambrado con entrada desde la calle, un banco y un mástil con la bandera argentina. Su propósito en esta etapa es permitir diseñar un lugar de juego barrial.
 
 No suma alojamiento ni produce recursos. No hay partidos, equipos, marcador, entrenamiento ni una variable de felicidad. Los vecinos todavía no juegan automáticamente al fútbol. Su valor actual es espacial y visual.
 
@@ -421,7 +443,7 @@ Las unidades buscan un recorrido sobre una grilla mediante A*. Pueden moverse ho
 
 Las diagonales no deben cortar esquinas bloqueadas. Cuando el destino coincide con un edificio, el sistema busca una posición accesible cercana a su borde.
 
-El borde ferroviario queda fuera del área de movimiento de los vecinos. No hay trenes en circulación ni simulación de tránsito.
+Los vecinos circulan por calles, veredas, pasillos entre casas y corazones de manzana que queden accesibles. Los autos estacionados y el tanque de agua también son obstáculos. El borde ferroviario queda fuera del área de movimiento de los vecinos. No hay trenes en circulación ni simulación de tránsito.
 
 La navegación es una primera implementación: no incluye circulación interior por habitaciones y patios, colisiones físicas entre vecinos, formación de grupos ni evasión sofisticada. Los objetos pequeños del decorado no equivalen necesariamente a obstáculos de navegación.
 
@@ -469,7 +491,7 @@ No se conserva la posición de cámara ni la selección. Tampoco se calcula prod
 
 ### Dónde queda el guardado
 
-Se guarda en `localStorage` del navegador, bajo la clave `conurban-barrio-v2`. Depende del navegador, dispositivo y dirección desde la cual se ejecuta el juego.
+Se guarda en `localStorage` del navegador, bajo la clave `conurban-barrio-v3`. Las partidas guardadas con el mapa anterior (`conurban-barrio-v2`) no se pueden cargar, porque los lotes cambiaron. Depende del navegador, dispositivo y dirección desde la cual se ejecuta el juego.
 
 Consecuencias:
 
@@ -486,12 +508,12 @@ Una secuencia posible para familiarizarte con los sistemas:
 
 1. Asigná un vecino a materiales y dejá que reúna las primeras 30 unidades.
 2. Destiná otro a yerba para sostener la incorporación de población.
-3. Mantené un vecino libre y construí una casa chorizo en un lote con acceso correcto.
+3. Mantené un vecino libre y construí una casa chorizo en un lote libre.
 4. Invitá un vecino aprovechando el club existente.
-5. Construí un almacén para generar yerba periódicamente.
+5. Construí un almacén en un lote de esquina para generar yerba al doble de ritmo.
 6. Agregá un lote de soja para ampliar la producción automática.
 7. Si necesitás más materiales por unidad de tiempo, construí un taller.
-8. Reservá una manzana suficientemente libre para un potrero.
+8. Reservá cuatro lotes seguidos sobre una calle norte o sur para un potrero.
 9. Completá el barrio con viviendas y espacios de encuentro según tu composición preferida.
 
 Esta secuencia no es obligatoria ni garantiza un resultado competitivo: todavía no hay rival ni una condición que exija optimizar la economía.
@@ -500,7 +522,7 @@ Esta secuencia no es obligatoria ni garantiza un resultado competitivo: todavía
 
 ### La construcción aparece en rojo
 
-Revisá el frente, el ancho, la profundidad y los obstáculos. Un edificio puede parecer pequeño en pantalla y ocupar un lote largo. Giralo con R o probá más cerca del centro de otra manzana. Un vecino parado sobre el lote también impide construir allí.
+El lote está ocupado por otra construcción o por un recurso que todavía no se agotó. Los edificios de varios lotes necesitan todos esos lotes libres: movelo a lo largo de la fila o probá en otra manzana.
 
 ### Tengo recursos, pero no puedo iniciar una obra
 
@@ -555,7 +577,7 @@ La arquitectura muestra espacios reconocibles, pero no se simula vida interior. 
 - Órdenes de movimiento y búsqueda de caminos.
 - Recuperación y cosecha con reservas finitas.
 - Siete opciones de construcción.
-- Orientación y ocupación rectangular de lotes.
+- Manzanas de 3 × 3 con 18 lotes cada una, colocación automática por lote y almacenes de esquina.
 - Obras con costo, avance y asignación de vecinos.
 - Capacidad residencial e incorporación de población.
 - Producción automática básica y beneficios de taller y club.
@@ -607,7 +629,7 @@ npm run preview
 - `index.html`: entrada, idioma, título y metadatos.
 - `src/main.js`: interfaz, selección, órdenes, simulación, cámara, guardado y carga.
 - `src/world.js`: mapa, modelos arquitectónicos, recursos y miniaturas 3D.
-- `src/economy.js`: catálogo, costos, tiempos, capacidad y reglas de ocupación.
+- `src/economy.js`: catálogo, costos, tiempos, capacidad, trazado de manzanas y lotes.
 - `src/style.css`: presentación y adaptación de la interfaz.
 - `vite.config.js`: servidor y separación de paquetes de producción.
 - `tests/economy.test.js`: pruebas de costos, lotes, orientación y restricciones.
@@ -625,7 +647,7 @@ Los identificadores internos `wood`, `food` y `yerba` corresponden, en la interf
 
 ### Renderizado
 
-Se utiliza una cámara ortográfica, iluminación ambiental y direccional, sombras y modelos generados con geometrías de Three.js. Las miniaturas del catálogo se renderizan a partir de los mismos modelos que aparecen en el mapa.
+Se utiliza una cámara ortográfica, iluminación ambiental y direccional, sombras y modelos generados con geometrías de Three.js. La escenografía estática y cada edificio terminado se fusionan en una malla por material, para mantener bajo el número de dibujados en el mapa grande. Las miniaturas del catálogo se renderizan a partir de los mismos modelos que aparecen en el mapa.
 
 No se descargan modelos 3D ni texturas de edificios de terceros. Las fuentes tipográficas se solicitan a Google Fonts y tienen alternativas locales si esa solicitud falla.
 
@@ -636,7 +658,7 @@ npm test
 npm run build
 ```
 
-Las pruebas unitarias comprueban costos, límites de terreno, calles y veredas, separación de edificios, rotación y orientación del frente. El recorrido de navegador comprueba interacción y progresión. No representan una certificación de compatibilidad con todos los dispositivos.
+Las pruebas unitarias comprueban costos, separación de edificios, rotación, el trazado de manzanas y lotes, la orientación del frente, los edificios de varios lotes y las esquinas. El recorrido de navegador comprueba interacción y progresión. No representan una certificación de compatibilidad con todos los dispositivos.
 
 El script de navegador incluido usa Playwright y una ubicación de dependencias propia del entorno donde se creó este prototipo. Para ejecutarlo en otra computadora, adaptá su importación o instalá Playwright y elegí un navegador compatible.
 
