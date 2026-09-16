@@ -6,6 +6,8 @@ Esta es la **etapa 1**: una maqueta viva, sin combate, hecha con [Three.js](http
 
 ![Tero Cosechado: una manzana con un potrero recién terminado](docs/captura.png)
 
+> **¿Querés jugar?** Leé las reglas en **[Cómo jugar](./COMO_JUGAR.md)**. La referencia completa está en el **[manual](./REGLAS_Y_MANUAL.md)**.
+
 ## Contenido
 
 - [Qué hay en el juego](#qué-hay-en-el-juego)
@@ -51,6 +53,8 @@ Arrancás con 280 materiales, 120 de soja, 20 de yerba y cinco vecinos: Ramón, 
    - Un taller acelera la recuperación de materiales.
 
 Los tres objetivos iniciales son: recuperar 30 materiales, construir una casa chorizo e invitar a un vecino. Después podés seguir construyendo libremente.
+
+Las reglas completas (lotes, recursos, construcción, invitaciones, consejos y problemas comunes) están en **[COMO_JUGAR.md](./COMO_JUGAR.md)**.
 
 ## Controles
 
@@ -127,6 +131,7 @@ La partida se guarda **a mano** desde el menú de pausa, en el `localStorage` de
 ├── tests/economy.test.js   Pruebas unitarias
 ├── scripts/playthrough.mjs Recorrido automatizado en navegador (Playwright)
 ├── public/favicon.svg
+├── COMO_JUGAR.md           Reglas y guía para jugar
 ├── docs/captura.png        Captura usada en este README
 └── REGLAS_Y_MANUAL.md      Manual de juego y documentación técnica
 ```
