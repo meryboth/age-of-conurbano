@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+playwright-report/
+test-results/
+preview-*.png
+playthrough-failure.png
+.sites-runtime/
+*.tar.gz
