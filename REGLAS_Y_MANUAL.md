@@ -1,10 +1,10 @@
-# Age of Conurban — Tero Cosechado
+# Age of Conurban — Tero Loteado
 
 ## Manual de juego, reglas y documentación de la etapa 1
 
 **Versión del juego:** 0.1, prototipo jugable.  
 **Última actualización:** 16 de septiembre de 2026.  
-**Escenario:** Tero Cosechado, un barrio imaginario del conurbano bonaerense.  
+**Escenario:** Tero Loteado, un barrio imaginario del conurbano bonaerense.  
 **Modalidad:** un jugador, en tiempo real, sin combate.  
 **Tecnología:** Three.js y Vite; ejecución en el navegador.
 
@@ -51,9 +51,9 @@ No hay una condición de derrota. Tampoco un límite de tiempo. Podés continuar
 
 ## 2. Identidad y escenario
 
-### Tero Cosechado
+### Tero Loteado
 
-Tero Cosechado es un escenario ficticio inspirado en el conurbano bonaerense. No reproduce un municipio, barrio ni momento histórico determinados.
+Tero Loteado es un escenario ficticio inspirado en el conurbano bonaerense. No reproduce un municipio, barrio ni momento histórico determinados.
 
 El mapa incluye:
 
@@ -160,6 +160,7 @@ Las tarjetas indican el atajo en su esquina. Si no ves todas, desplazá horizont
 - **Rotar cámara:** cambiar la orientación de la vista.
 - **Centrar:** volver al barrio central y al zoom inicial.
 - **Minimapa:** hacer clic para desplazar el centro de la cámara hacia ese sector.
+- **Paleta**, en la barra superior: elegir los colores de la interfaz entre verde, azul y bordó. La elección queda guardada en el navegador.
 - **Detener**, en la ficha del vecino: interrumpir su tarea y recorrido actuales.
 
 ### Pantallas táctiles
@@ -186,7 +187,7 @@ Los valores del inventario se muestran redondeados hacia abajo. Internamente pue
 
 ### Nombre y reloj
 
-La esquina superior izquierda identifica Tero Cosechado y muestra el tiempo de simulación transcurrido. El reloj se detiene al pausar o abrir la ayuda.
+La esquina superior izquierda identifica Tero Loteado y muestra el tiempo de simulación transcurrido. El reloj se detiene al pausar o abrir la ayuda.
 
 La tarde de primavera es la ambientación visual fija. Todavía no existe un ciclo de día y noche ni estaciones jugables.
 
@@ -272,7 +273,7 @@ Podés invitar desde la sociedad de fomento o desde la pestaña Vecinos.
 
 - Sin club terminado: **35 soja y 5 yerba** por vecino.
 - Con por lo menos un club terminado: **25 soja y 3 yerba**.
-- Tero Cosechado empieza con un club terminado; por eso la tarifa reducida está activa desde el inicio.
+- Tero Loteado empieza con un club terminado; por eso la tarifa reducida está activa desde el inicio.
 - Debe existir un lugar libre en la capacidad de alojamiento.
 - Los costos se descuentan inmediatamente.
 - El nuevo vecino aparece cerca del centro del barrio y espera una orden.
@@ -572,7 +573,7 @@ La arquitectura muestra espacios reconocibles, pero no se simula vida interior. 
 
 ### Implementado
 
-- Escenario 3D de Tero Cosechado.
+- Escenario 3D de Tero Loteado.
 - Selección de unidades, recursos y construcciones.
 - Órdenes de movimiento y búsqueda de caminos.
 - Recuperación y cosecha con reservas finitas.
@@ -739,4 +740,4 @@ Antes de publicar una revisión:
 6. Actualizar los límites conocidos.
 7. Mover una idea de «futura» a «implementada» solamente después de verificarla.
 
-Las reglas de esta versión son pequeñas a propósito: su centro es que Tero Cosechado se pueda construir, recorrer y reconocer como un barrio con identidad propia.
+Las reglas de esta versión son pequeñas a propósito: su centro es que Tero Loteado se pueda construir, recorrer y reconocer como un barrio con identidad propia.

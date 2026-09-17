@@ -1,10 +1,10 @@
-# Age of Conurban — Tero Cosechado
+# Age of Conurban — Tero Loteado
 
-Juego de estrategia y construcción para un jugador, ambientado en **Tero Cosechado**, un barrio imaginario del conurbano bonaerense. Juntá materiales, soja y yerba, sumá vecinos y levantá casas chorizo, conventillos, almacenes de esquina, clubes y potreros, lote por lote.
+Juego de estrategia y construcción para un jugador, ambientado en **Tero Loteado**, un barrio imaginario del conurbano bonaerense. Juntá materiales, soja y yerba, sumá vecinos y levantá casas chorizo, conventillos, almacenes de esquina, clubes y potreros, lote por lote.
 
 Esta es la **etapa 1**: una maqueta viva, sin combate, hecha con [Three.js](https://threejs.org/) y [Vite](https://vite.dev/). Corre en el navegador y no necesita backend.
 
-![Tero Cosechado: una manzana con un potrero recién terminado](docs/captura.png)
+![Tero Loteado: una manzana con un potrero recién terminado](docs/captura.png)
 
 > **¿Querés jugar?** Leé las reglas en **[Cómo jugar](./COMO_JUGAR.md)**. La referencia completa está en el **[manual](./REGLAS_Y_MANUAL.md)**.
 
@@ -68,6 +68,7 @@ Las reglas completas (lotes, recursos, construcción, invitaciones, consejos y p
 | Construir | Teclas <kbd>1</kbd>–<kbd>7</kbd> o las tarjetas del catálogo | Tocar la tarjeta y después el lote |
 | Cancelar | <kbd>Esc</kbd> o clic derecho | Botón **Cancelar** |
 | Pausa, guardar y cargar | <kbd>Espacio</kbd> o botón de pausa | Botón de pausa |
+| Cambiar colores (verde, azul o bordó) | Botón de paleta | Botón de paleta |
 
 ## Edificios
 
@@ -132,7 +133,10 @@ La partida se guarda **a mano** desde el menú de pausa, en el `localStorage` de
 ├── scripts/playthrough.mjs Recorrido automatizado en navegador (Playwright)
 ├── public/favicon.svg
 ├── COMO_JUGAR.md           Reglas y guía para jugar
-├── docs/captura.png        Captura usada en este README
+├── docs/
+│   ├── DISENO_CAMPANA.md   Diseño de la campaña (etapa 2)
+│   ├── HISTORIA_URBANA.md  Investigación histórica con fuentes
+│   └── captura.png         Captura usada en este README
 └── REGLAS_Y_MANUAL.md      Manual de juego y documentación técnica
 ```
 
@@ -182,15 +186,14 @@ Si lo publicás en una subcarpeta (por ejemplo, `usuario.github.io/age-of-conurb
 
 ## Estado y próximos pasos
 
-La etapa 1 es para un jugador y **no tiene** combate, rival, multijugador ni partidos en el potrero. Para acercarse a un *Age of Empires* del conurbano, la idea para la próxima etapa es:
+La etapa 1 es para un jugador y **no tiene** combate, rival, multijugador ni partidos en el potrero.
 
-1. **Un barrio rival** manejado por la computadora.
-2. **Edades del barrio:** Loteo → Barrio → Municipio → Conurbano, con nuevos edificios y mejoras en cada una.
-3. **Disputa de manzanas y partidos entre barrios** en el potrero.
-4. **Más economía:** plata y comercio.
-5. **Mejoras de juego:** selección múltiple y niebla de guerra.
+La **etapa 2** convierte el juego en una campaña, **"Cien años de Tero Loteado"**: cuatro capítulos, de 1905 a hoy, basados en la historia urbana real del conurbano. En cada capítulo cambian las reglas y hay que competir con un barrio vecino.
 
-El detalle de lo implementado y lo pendiente está en las secciones *Alcance y límites* y *Posibles etapas futuras* del [manual](./REGLAS_Y_MANUAL.md).
+- **Diseño:** [docs/DISENO_CAMPANA.md](./docs/DISENO_CAMPANA.md).
+- **Investigación histórica con fuentes:** [docs/HISTORIA_URBANA.md](./docs/HISTORIA_URBANA.md).
+
+El detalle de lo implementado en la etapa 1 está en la sección *Alcance y límites* del [manual](./REGLAS_Y_MANUAL.md).
 
 ---
 

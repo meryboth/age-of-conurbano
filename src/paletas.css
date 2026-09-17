@@ -1,0 +1,24 @@
+/* Paletas de color: verde es la base de style.css; azul y bordó reemplazan los tonos oscuros y los acentos. */
+html[data-paleta=azul]{--panel:#16263af5;--tono-barra:#111f31f7;--tono-pie:#0f1b2beb;--tono-aviso:#12213aef;--tono-herramientas:#16263ad9;--tono-dialogo:#16263a;--tono-fondo:#0d172688;--tono-retrato-a:#4f6a8a;--tono-retrato-b:#26384f;--acento:#9cc2e0;--acento-hecho:#a6d2f0;--acento-suave:#8fb8d8}
+html[data-paleta=bordo]{--panel:#3a1620f5;--tono-barra:#2f111af7;--tono-pie:#290e16eb;--tono-aviso:#34131def;--tono-herramientas:#3a1620d9;--tono-dialogo:#3a1620;--tono-fondo:#22091088;--tono-retrato-a:#7a4a52;--tono-retrato-b:#4a1c28;--acento:#e8b4a4;--acento-hecho:#f0c48e;--acento-suave:#e2a896}
+html[data-paleta] .topbar{background:var(--tono-barra)}
+html[data-paleta] .bottom-hints{background:var(--tono-pie)}
+html[data-paleta] #toast{background:var(--tono-aviso)}
+html[data-paleta] .placement-hint{background:var(--panel)}
+html[data-paleta] .map-tools{background:var(--tono-herramientas)}
+html[data-paleta] dialog{background:var(--tono-dialogo)}
+html[data-paleta] dialog::backdrop{background:var(--tono-fondo)}
+html[data-paleta] .portrait{background:linear-gradient(135deg,var(--tono-retrato-a),var(--tono-retrato-b))}
+html[data-paleta] .portrait.person{background:radial-gradient(ellipse at 50% 40%,#987d4b,var(--tono-retrato-b) 90%)}
+html[data-paleta] .resource>svg,html[data-paleta] .goal.done,html[data-paleta] .resource small{color:var(--acento)}
+html[data-paleta] .goal.done svg{fill:var(--acento-hecho);color:var(--acento-hecho)}
+html[data-paleta] .live-dot,html[data-paleta] .status-dot,html[data-paleta] .unit-health{background:var(--acento-suave)}
+@media(max-width:720px){html[data-paleta] .selection-panel{background:var(--panel)}}
+
+/* Selector de paleta */
+.palette-picker{position:relative}
+.palette-menu{position:absolute;top:calc(100% + 10px);right:0;z-index:6;display:flex;flex-direction:column;gap:4px;min-width:150px;padding:6px;background:var(--tono-dialogo,#1a2d25);border:1px solid #ffffff22;border-radius:8px;box-shadow:0 10px 30px #0006}
+.palette-menu button{display:flex;align-items:center;gap:10px;padding:8px 10px;background:none;border-radius:5px;font-size:12px;color:#e7e4d2;text-align:left}
+.palette-menu button:hover{background:#ffffff14}
+.palette-menu button[aria-checked=true]{background:#ffffff1c;color:var(--gold)}
+.swatch{width:16px;height:16px;border-radius:50%;border:1.5px solid #ffffff55;flex-shrink:0}

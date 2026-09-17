@@ -13,7 +13,7 @@ const focus=async(x,z)=>{await page.evaluate(p=>window.gameInspect.look(...p),[x
 const resources=()=>page.evaluate(()=>window.gameInspect.resources());
 const plots=type=>page.evaluate(t=>window.gameInspect.plots(t),type);
 try{
- assert.equal(await page.locator('h1').innerText(),'Tero Cosechado\n01');
+ assert.equal(await page.locator('h1').innerText(),'Tero Loteado\n01');
  // Select a real person from the UI and issue a world-space resource order.
  await page.locator('#neighbors-tab').click();await page.locator('[data-unit="0"]').click();
  const wood=(await resources()).find(r=>r.type==='wood');await focus(wood.x,wood.z);await clickWorld(wood.x,wood.z,.45,'right');

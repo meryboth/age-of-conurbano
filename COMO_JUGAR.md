@@ -1,6 +1,6 @@
-# Cómo jugar a Tero Cosechado
+# Cómo jugar a Tero Loteado
 
-Guía de reglas para jugar a **Age of Conurban — Tero Cosechado**. Para la referencia completa (interfaz, guardado, límites y detalles técnicos), mirá el [manual](./REGLAS_Y_MANUAL.md).
+Guía de reglas para jugar a **Age of Conurban — Tero Loteado**. Para la referencia completa (interfaz, guardado, límites y detalles técnicos), mirá el [manual](./REGLAS_Y_MANUAL.md).
 
 ## Índice
 
@@ -155,6 +155,7 @@ Al cumplirlos aparece un mensaje y seguís jugando libremente. No hay puntaje ni
 | Construir | <kbd>1</kbd>–<kbd>7</kbd> o las tarjetas | Tarjeta y después el lote |
 | Cancelar la construcción | <kbd>Esc</kbd> o clic derecho | Botón **Cancelar** |
 | Pausa | <kbd>Espacio</kbd>, <kbd>Esc</kbd> o botón de pausa | Botón de pausa |
+| Colores de la interfaz | Botón de paleta: verde, azul o bordó | Botón de paleta |
 
 **Guardar y cargar** se hace desde el menú de pausa. El guardado es manual, queda solo en ese navegador y la partida no se carga sola al abrir el juego.
 
